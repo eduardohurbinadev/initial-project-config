@@ -1,0 +1,23 @@
+{
+  "name": "node-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --ignore-path .gitignore",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json|tsx)\"",
+    "check-types": "tsc",
+    "check": "npm run format && npm run check-types && npm run lint"
+  },
+  "author": "eduardohurbina-dev",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.7.0",
+    "eslint-config-prettier": "^8.3.0",
+    "husky": "^7.0.4",
+    "jest": "^27.4.7",
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.5"
+  }
+}
